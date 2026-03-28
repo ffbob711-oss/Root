@@ -108,7 +108,7 @@ def process_attack(message, target, port, time):
         parse_mode="Markdown")
 
     # Execute the attack
-    full_command = f"./Spike {target} {port} {time} 400"
+    full_command = f"./Spike {target} {port} {time} 200"
     try:
         subprocess.run(full_command, shell=True, check=True)
     except subprocess.CalledProcessError:
